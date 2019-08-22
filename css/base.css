@@ -1,0 +1,594 @@
+.w{
+	width: 1190px;
+	margin: auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.red{
+	color: red;
+}
+i{
+	font-style: normal;
+}
+li{
+	list-style: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+body {
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    color: #666;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/iconfont.woff2') format('woff2'),
+      url('../fonts/iconfont.woff') format('woff'),
+      url('../fonts/iconfont.ttf') format('truetype'),
+      url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*顶部*/
+.J_event{
+	background-color: black;
+}
+.J_event a{
+	display: block;
+	height: 80px;
+	background: url(../images/top.jpg) no-repeat;
+	position: relative;
+}
+.J_event a i{
+	text-decoration: none;
+	font-style: normal;
+	color: white;
+	font-size: 16px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	text-align: center;
+	line-height: 20px;
+	right: 0;
+	top: 5px;
+} 
+/*快捷导航栏*/
+.shortcut{
+	background-color: #E3E4E5;
+	border-bottom: 1px solid #ddd;;
+}
+.shortcut .w{
+	height: 30px;
+	line-height:30px;
+	color:#999999;
+}
+.shortcut ul.fl i{
+	color: red;
+	font-style: normal;
+}
+.shortcut ul a{
+	color:#999999;
+}
+.shortcut ul a.red{
+	color: red;
+}
+.shortcut ul.fr li{
+	display: inline-block;
+	padding:0 8px;
+}
+.shortcut ul.fr li.first{
+	padding:0;
+}
+.shortcut ul.fr li span:hover{
+	color: red;
+}
+.shortcut ul.fr li i{
+	font-size: 12px;
+}
+/*搜索*/
+.header{
+	border-bottom: 1px solid #ddd;
+}
+.header .w{
+	height: 140px;
+	position: relative;
+}
+.header .logo{
+	position: absolute;
+	left: 0;
+	top: -30px;
+	background-color: purple;
+	box-shadow: 0 -6px 10px rgba(0,0,0,.2);
+}
+.header .logo a{
+	display: block;
+	height: 170px;
+	width: 190px;
+	background: url(../images/logo.jpg) no-repeat;
+}
+.header .search{
+	text-align: center;
+	position: relative;
+}
+.header .sbox{
+	width: 546px;
+	height: 32px;
+	border: 2px solid #e1251b;
+	position: absolute;
+	top: 25px;
+	left: 260px;
+}
+.header .sbox input{
+	left: 0;
+	position: absolute;
+	border: 1px solid transparent;
+	padding: 2px 44px 2px 17px; 
+	width: 425px;
+	height: 26px;
+	color: #999;
+	outline: 0;
+}
+.header .carmera{
+	display: inline-block;
+	height: 15px;
+	width: 19px;
+	background: url(../images/sprite-search.png) no-repeat;
+	position: absolute;
+	top: 8px;
+	right: 75px;
+	font-size: 21px;
+}
+.header .carmera:hover{
+	background: url(../images/sprite-search.png) no-repeat -30px 0;
+}
+.header .sicon{
+	position: absolute;
+	right: 0;
+	background-color: #e1251b;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 32px;
+	width: 58px;
+	line-height: 32px;
+}
+.header .sicon:hover{
+	background-color: #c81623;
+}
+.header .hotwords{
+	position: absolute;
+	left: 260px;
+	top: 65px;
+}
+.header .hotwords a{
+	padding-right: 10px;
+}
+.header .navitems{
+	position: absolute;
+	left: 210px;
+	bottom: 0;
+	font-size: 15px;
+}
+.header .navitems-group1{
+	overflow: hidden;
+}
+.header .navitems-group1 li{
+	float: left;
+	height: 40px;
+}
+.header .navitems a{
+	display: inline-block;
+	margin: 0 11px;
+	color: #333;
+	padding: ;
+	line-height: 40px;
+}
+.header .navitems a:hover{
+	color: #e1251b;
+}
+.header .settleup{
+	border: 1px solid #eee;
+	position: absolute;
+	right: 230px;
+	height: 34px;
+	width: 130px;
+	top: 25px;
+	line-height: 34px;
+	text-align: center;
+}
+.header .settleup .num{
+	color: white;
+	background-color: #e1251b;
+	height: 12px;
+	width: 12px;
+	padding: 1px 3px;
+	position: absolute;
+	top: 0;
+	left: 33px;
+	border-radius: 7px;
+	line-height: 12px;
+	text-align: center;
+}
+.header .settleup:hover{
+	border: 1px solid #e1251b;
+}
+.header .settleup i{
+	font-weight: 700;
+	font-size: 21px;
+}
+.header .settleup a{
+	color: #e1251b;
+}
+.header .erweima a{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	margin: 5px;
+	width: 66px;
+	height: 66px;
+	background-color: #f6f6f6;
+	background: url(../images/erweima.png) no-repeat center;
+	border: 1px solid #ccc;
+}
+.header .padpost{
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
+}
+/*快捷导航栏结束*/
+/*主体*/
+.fs,.footer{
+	background-color: rgb(244,244,244);
+	position: relative;
+}
+.fs .w{
+	padding: 10px 0 20px;
+	overflow: hidden;
+	position: relative;
+	z-index: 999;
+}
+/*.fs .clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}*/
+.fs .left{
+	width: 190px;
+	height: 460px;
+	padding-top: 10px;
+	background-color: white;
+}
+.fs .left li{
+	padding-left: 18px;
+	width: 172px;
+	font-size: 14px;
+	line-height: 23px;
+}
+.fs .left li:hover{
+ 	background-color: #eee;
+}
+.fs .left li a{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	color: #636363;;
+}
+.fs .left li a:hover{
+	color: #e1251b;
+}
+.fs .mid1{
+	margin: 0 10px;
+	position: relative;
+}
+.fs .mid1 .post{
+	height: 470px;
+	width: 590px;
+}
+.fs .mid1 .select{
+	width: 125px;
+	height: 15px;
+	position: absolute;
+	left: 30px;
+	bottom: 20px;
+}
+.fs .mid1 .select li{
+	position: relative;
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin-left: 4px;
+	border: 1px solid rgba(0,0,0,.05);
+	background-color: rgba(255,255,255,.4);
+	border-radius: 50%;
+}
+.fs .mid1 .select li:hover{
+	border: 3px solid rgba(0,0,0,0.3);
+	background-color: rgba(255,255,255,1);
+	width: 9px;
+	height: 9px;
+	top: -2px;
+}
+.fs .mid1 .left,.fs .mid2 .left{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	padding:0;
+	height: 35px;
+	width: 25px;
+	line-height: 35px;
+	text-align: center;
+	background-color: rgba(0,0,0,.15);
+	color:rgba(255,255,255,.8);
+	border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.fs .mid1 .right,.fs .mid2 .right{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	padding: 0;
+	height: 35px;
+	width: 25px;
+	line-height: 35px;
+	text-align: center;
+	background-color: rgba(0,0,0,.15);
+	color: rgba(255,255,255,.8);
+	border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.fs .mid1 .right a,.fs .mid1 .left a{
+	position: relative;
+}
+.fs .mid1 .right a{
+	right: -3px;
+}
+.fs .mid1 .left a{
+	left: -3px;
+}
+.fs .mid2 .right:hover,.fs .mid2 .left:hover,.fs .mid1 .right:hover,.fs .mid1 .left:hover{
+	background-color: rgba(0,0,0,.4);
+	color: color: rgba(255,255,255,.8);
+}
+.fs .mid2 .right a,.fs .mid2 .left a{
+	color: rgba(255,255,255,.8);
+	position: relative;
+}
+.fs .mid2 .right a{
+	right: -3px;
+}
+.fs .mid2 .left a{
+	left: -3px;
+}
+.fs .mid2{
+	margin-right: 10px;
+	position: relative;
+}
+.fs .mid2 .pic{
+	display: block;
+	height: 150px;
+	width: 190px;
+}
+.fs .mid2 .juli{
+	margin-bottom: 10px;
+}
+.fs .mid2 img{
+	height: 150px;
+	width: 190px;
+}
+.fs .right{
+	width: 190px;
+	height: 470px;
+	background-color: #ffffff;
+}
+.fs .right .user{
+	position: relative;
+	height: 102px;
+}
+.fs .right .user img{
+	border-radius: 50%;
+	height: 42px;
+	width: 42px;
+	border: 1px solid #ffffff;
+	position: absolute;
+	top: 13px;
+	left: 20px;
+}
+.fs .right .login{
+	width: 106px;
+	height: 38px;
+	position: absolute;
+	right: 10px;
+	top: 16px;
+}
+.fs .right .login a:hover{
+	color: #c81623;
+}
+.fs .right a{
+	color: #636363;
+}
+.fs .right .fuli{
+	height: 25px;
+	position: absolute;
+	left: 0px;
+	top: 55px;
+	text-align: center;
+	width: 100%;
+}
+.fs .fuli a{
+	display: inline-block;
+	height: 25px;
+	width: 70px;
+	margin: 10px 5px;
+	line-height: 25px;
+	border-radius: 12px;
+}
+.fs .fuli a:hover{
+	background-color: #c81623;
+	color: white;
+}
+.fs .fuli .newuser{
+	color: white;
+	background-color: #e1251b;
+}
+.fs .fuli .vip{
+	background-color:#363634;
+	color: #e5d790;
+}
+.fs .right .user:after{
+	position: absolute;
+	height: 1px;
+	left: 15px;
+	bottom: 0px;
+	right: 15px;
+	content: " ";
+	background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
+.fs .quickreport{
+	height: 130px;
+	position: relative;
+}
+.fs .quickreport:after{
+	content: "";
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	right: 15px;
+	background: linear-gradient(270deg,white,#eeeeee,#eeeeee,white);
+}
+.fs .quickreport .header{
+	border-bottom: none;
+	position: relative;
+	padding-top: 10px;
+}
+.fs .quickreport h3{
+	font-size: 14px;
+	height: 20px;
+	color: #333;
+	margin: 0;
+	margin-left:15px;
+}
+.fs .quickreport .header a{
+	font-size: 12px;
+	color: #999;
+	position: absolute;
+	right: 15px;
+	top: 11px;
+	line-height: 20px;
+}
+.fs .quickreport a:hover,.fs .tool a:hover{
+	color: #e1251b;
+}
+.fs .quickreport .news{
+	padding: 5px 0 10px;
+	position: relative;
+}	
+.fs .quickreport .news li{
+	margin:0 15px;
+	height: 21px;
+	line-height: 22px;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.fs .quickreport .news .news_tag{
+	display: inline-block;
+	height: 16px;
+	width: 35px;
+	line-height: 16px;
+	text-align: center;
+	color: #e1251b;
+	background-color: rgba(225,37,27,.08);
+	margin-right: 6px;
+}
+.fs .right .tool{
+	height: 238px;
+	padding-top: 8px;
+}
+.fs .right .tool li{
+	height: 55px;
+	width: 63px;
+	text-align: center;
+}
+.fs .right .tool .iconfont{
+	font-size: 27px;
+}
+/*双12*/
+.fs .ad {
+	background: url(../images/bg.png) no-repeat top center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:480px;
+	width: 100%;
+}
+.fs .ad a{
+	display: block;
+	height: 100%;
+}
+/*双12结束*/
+/*底部开始*/
+
+.footer .goodness{
+	width: 1178px;
+	height: 42px;
+	padding: 30px 0 30px 45px;
+}
+.footer .goodness li{
+	position: relative;
+	padding-left: 46px;
+	margin-right: 77px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 18px;
+	font-weight: bolder;
+	color: black;
+}
+.footer .goodness h5{
+	height: 42px;
+	width: 36px;
+	text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    margin: 0;
+}
+.footer .goodness .many h5{
+	background: url(../images/ico_service.png) no-repeat;
+}
+.footer .goodness .quick h5{
+	background: url(../images/ico_service.png) no-repeat;
+}
+.footer .goodness .good h5{
+	background: url(../images/ico_service.png) no-repeat;
+}
+.footer .goodness .less h5{
+	background: url(../images/ico_service.png) no-repeat;
+}
+.footer .shopping_direction{}
+/*底部结束*/
