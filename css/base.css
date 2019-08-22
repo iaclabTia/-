@@ -298,13 +298,13 @@ body {
 	background: url(../images/ico_service.png) no-repeat;
 }
 .footer .goodness .quick h5{
-	background: url(../images/ico_service.png) no-repeat;
+	background: url(../images/ico_service.png) no-repeat 0 -42px;
 }
 .footer .goodness .good h5{
-	background: url(../images/ico_service.png) no-repeat;
+	background: url(../images/ico_service.png) no-repeat 0 -85px;
 }
 .footer .goodness .less h5{
-	background: url(../images/ico_service.png) no-repeat;
+	background: url(../images/ico_service.png) no-repeat 0 -128px;
 }
 .footer .help{
 	border-bottom: 1px solid #ddd;
