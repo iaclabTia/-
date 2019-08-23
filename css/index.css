@@ -81,7 +81,7 @@
   background-color: rgba(255,255,255,.4);
   border-radius: 50%;
 }
-.fs .mid1 .select li:hover{
+.fs .mid1 .select li:hover,.fs .mid1 .select .current{
   border: 3px solid rgba(0,0,0,0.3);
   background-color: rgba(255,255,255,1);
   width: 9px;
