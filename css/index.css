@@ -64,6 +64,10 @@
   height: 470px;
   width: 590px;
 }
+.fs .mid1 .post img{
+  height: 100%;
+  width: auto;
+}
 .fs .mid1 .select{
   width: 125px;
   height: 15px;
