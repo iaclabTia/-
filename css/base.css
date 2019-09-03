@@ -40,6 +40,9 @@ img{
 	clear: both;
 	visibility: hidden;
 }
+.clearfix{
+	*zoom:1;
+}
 @font-face {
   font-family: 'iconfont';
   src: url('../fonts/iconfont.eot');
@@ -193,6 +196,9 @@ img{
 .header .hotwords a{
 	padding-right: 10px;
 }
+.header .hotwords a:hover{
+	color: #e1251b;
+}
 .header .navitems{
 	position: absolute;
 	left: 210px;
@@ -249,16 +255,59 @@ img{
 .header .settleup a{
 	color: #e1251b;
 }
-.header .erweima a{
+.header .erweima{
+    z-index:9999;
 	position: absolute;
 	right: 0;
-	top: 5px;
+	top: -5px;
 	margin: 5px;
-	width: 66px;
-	height: 66px;
-	background-color: #f6f6f6;
-	background: url(../images/erweima.png) no-repeat center;
+	width: 183px;
+	height: 299px;
+	/*background-color: #f6f6f6;*/
+    background-color: #fff;
 	border: 1px solid #ccc;
+    border-bottom: 4px solid #000;
+}
+.header .erweima li{
+	height:100px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 90px;
+    padding-top: 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.header .erweima li p{
+    color:#e1251b;
+    padding: 2px 0;
+    line-height: 14px;
+}
+.erweima .xitong a{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+}
+.erweima .apple{
+    background: url(../images/xitong.png) 0 0;
+}
+.erweima .ios{
+    background: url(../images/xitong.png) 0 -25px;
+}
+.erweima .ipad{
+    background: url(../images/xitong.png) 0 -50px;
+}
+.header .erweima .sj{
+	background: url(../images/erweima.png) no-repeat 5px center;
+    background-size:75px 75px;
+}
+.header .erweima .wx{
+	background: url(../images/erweima2.jpg) no-repeat 5px center;
+    background-size:75px 75px;
+}
+.header .erweima .jr{
+	background: url(../images/erweima3.jpg) no-repeat 5px center;
+    background-size:75px 75px;
 }
 .header .padpost{
 	position: absolute;
