@@ -58,24 +58,36 @@
 }
 .fs .mid1{
   margin: 0 10px;
-  position: relative;
 }
-.fs .mid1 .post{
+#rb_box .inner {
   height: 470px;
   width: 590px;
+  position: relative;
+  overflow: hidden;
 }
-.fs .mid1 .post img{
+#rb_box ul.rb_pic {
+  width: 1000%;
+  height: 590px;
+  position: absolute;
+  left: 0;
+}
+#rb_box .rb_pic li{
+  height: 470px;
+  width: 590px;
+  float: left;
+}
+#rb_box .rb_pic img{
   height: 100%;
   width: auto;
 }
-.fs .mid1 .select{
+#rb_box .rb_button{
   width: 125px;
   height: 15px;
   position: absolute;
   left: 30px;
   bottom: 20px;
 }
-.fs .mid1 .select li{
+#rb_box .rb_button li{
   position: relative;
   float: left;
   width: 8px;
@@ -85,67 +97,67 @@
   background-color: rgba(255,255,255,.4);
   border-radius: 50%;
 }
-.fs .mid1 .select li:hover,.fs .mid1 .select .current{
+#rb_box .rb_button .current{
   border: 3px solid rgba(0,0,0,0.3);
   background-color: rgba(255,255,255,1);
   width: 9px;
   height: 9px;
   top: -2px;
 }
-.fs .mid1 .left,.fs .mid2 .left{
+#rb_lr{
+  display:none;
+}
+#rb_lr span,.fs .mid2 .left,.fs .mid2 .right{
   position: absolute;
-  left: 0;
   top: 50%;
   padding:0;
   height: 35px;
-  width: 25px;
+  width: 22px;
   line-height: 35px;
   text-align: center;
   background-color: rgba(0,0,0,.15);
   color:rgba(255,255,255,.8);
+  cursor: pointer;
+}
+#rb_lr .left,.fs .mid2 .left{
+  left: 0;
+  padding-right: 3px;
   border-top-right-radius: 18px;
-    border-bottom-right-radius: 18px;
+  border-bottom-right-radius: 18px;
 }
-.fs .mid1 .right,.fs .mid2 .right{
-  position: absolute;
+#rb_lr .right,.fs .mid2 .right{
   right: 0;
-  top: 50%;
-  padding: 0;
-  height: 35px;
-  width: 25px;
-  line-height: 35px;
-  text-align: center;
-  background-color: rgba(0,0,0,.15);
-  color: rgba(255,255,255,.8);
+  padding-left: 3px;
+  border-bottom-left-radius: 18px;
   border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
 }
-.fs .mid1 .right a,.fs .mid1 .left a{
-  position: relative;
-}
-.fs .mid1 .right a{
-  right: -3px;
-}
-.fs .mid1 .left a{
-  left: -3px;
-}
-.fs .mid2 .right:hover,.fs .mid2 .left:hover,.fs .mid1 .right:hover,.fs .mid1 .left:hover{
+.fs .mid2 .right:hover,.fs .mid2 .left:hover,#rb_lr .right:hover,#rb_lr .left:hover{
   background-color: rgba(0,0,0,.4);
-  color: color: rgba(255,255,255,.8);
+  color:rgba(255,255,255,.8);
 }
-.fs .mid2 .right a,.fs .mid2 .left a{
-  color: rgba(255,255,255,.8);
-  position: relative;
-}
-.fs .mid2 .right a{
-  right: -3px;
-}
-.fs .mid2 .left a{
-  left: -3px;
+.fs .mid2 #mid2_rb_lr{
+  display: none;
 }
 .fs .mid2{
   margin-right: 10px;
+}
+
+.fs .mid2 .inner{
+  width: 190px;
+  height: 470px;
+  overflow: hidden;
   position: relative;
+}
+.fs .mid2 ul{
+  height: 470px;
+  width: 1000%;
+  position: absolute;
+  left: 0;
+}
+.fs .mid2 li{
+  width: 190px;
+  height: 470px;
+  float: left;
 }
 .fs .mid2 .pic{
   display: block;
